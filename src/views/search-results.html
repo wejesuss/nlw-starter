@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+{% set pageId = "page-search-results" %}
+
+{% block title %}
+    <title>Resultados da pesquisa</title>
+{% endblock title %}
+
+{% block imports %}
+    <link rel="stylesheet" href="/styles/search-results.css">
+{% endblock imports %}
+
+{% block content %}
+    {% include "parts/page-header.html" %}
+
+    <main>
+        <h4>
+            <strong>2 pontos</strong>
+            encontrados
+        </h4>
+
+        <div class="cards">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1573219079034-f17c5c36fb7e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="Colectoria">
+                <h1>Colectoria</h1>
+                <h3>Resíduos Eletrônicos, Lâmpadas</h3>
+                <p>
+                    Rio do Sul, Santa Catarina
+                    <br/>
+                    Guilherme Gembalia, Jardmin América
+                    <br/>
+                    Número 260
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1582669300365-630322b86cf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80" alt="Papersider">
+                <h1>Papersider</h1>
+                <h3>Papéis e Papelão</h3>
+                <p>
+                    Rio do Sul, Santa Catarina
+                    <br/>
+                    Guilherme Gembalia, Jardmin América
+                    <br/>
+                    Número 260
+                </p>
+            </div>
+        </div>
+    </main>
+{% endblock content %}

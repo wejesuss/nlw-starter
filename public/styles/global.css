@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@300;400;700&display=swap');
+
+:root {
+    --title-color: #30116dd8;
+    --second-title-color: #110143;
+    --primary-color: #34cb79;
+    --green: #04D361;
+    --gray: #53535A;
+    --black-bg: rgb(28, 28, 32);
+    --white: #fefefe;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Roboto", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h6 {
+    font-family: "Ubuntu", sans-serif;
+    color: var(--title-color);
+}
+
+body {
+    background: var(--black-bg);
+    -webkit-font-smoothing: antialiased;
+}
