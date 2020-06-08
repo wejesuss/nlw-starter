@@ -11,18 +11,21 @@
     transition: .4s;
 }
 
-#modal .success {
+#modal .success,
+#modal .error-not-found {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#modal .success img {
+#modal .success img,
+#modal .error-not-found img {
     animation: top-bottom forwards 1s;
     transition: animation 1s;
 }
 
-#modal .success h2 {
+#modal .success h2,
+#modal .error-not-found h2 {
     font-size: 32px;
     color: #fefefe;
     margin-top: 32px;

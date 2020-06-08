@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% set pageId = "page-home" %}
+
+{% block imports %}
+    <link rel="stylesheet" href="/styles/modal.css">
+{% endblock imports %}
+
+{% block content %}
+    <div class="content">
+        <div id="modal" class="point">
+            <div class="error-not-found">
+                <img src="/assets/not-check.svg" alt="Página não encontrada">
+                <h2>Página não encontrada</h2>
+            </div>
+        </div>
+        
+        <script>
+            setTimeout(() => {
+                window.location = "/"
+            }, 2500)
+        </script>
+    </div>
+{% endblock content %}

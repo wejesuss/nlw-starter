@@ -14,4 +14,8 @@ nunjucks.configure("src/views", {
 
 server.use(routes)
 
+server.use(function(req, res) {
+    res.status(404).render("not-found.html");
+});
+
 server.listen(process.env.PORT || 3000)
