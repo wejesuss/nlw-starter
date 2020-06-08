@@ -33,3 +33,29 @@ body {
     background: var(--black-bg);
     -webkit-font-smoothing: antialiased;
 }
+
+div.error {
+    position: fixed;
+    top: -500px;
+    right: 0;
+    width: 32%;
+    max-width: 310px;
+    min-height: 32vh;
+    border: #615197 1px solid;
+    margin: 8px 24px;
+    background: #ee3131;
+    border-radius: 12px;
+    text-align: center;
+    transition: all .3s;
+}
+
+div.error div.message-error {
+    font-size: 28px;
+    position: absolute;
+    top: 50%;
+    line-height: 48px;
+    color: #e8e1e1;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bold;
+    transform: translateY(-50%);
+}

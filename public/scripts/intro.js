@@ -115,3 +115,20 @@ function handleSelectedItem(event) {
 
     collectedItems.value = selectedItems
 }
+
+
+function showError() {
+    const error = document.querySelector("div.error div.message-error")
+
+    if(error && error.innerHTML.trim()) {
+
+        error.parentNode.style.top = 0
+        
+        setTimeout(() => {
+            error.parentNode.style.top = "initial"
+            window.location.href = "http://localhost:3000/create-point"
+        }, 3000)
+    }
+}
+
+showError()
